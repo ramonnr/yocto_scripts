@@ -1,0 +1,8 @@
+{
+"target_ip":"symbolicname/ip",
+"target_port":"portnumber",
+"target_path":"programfolder",
+"target_user":"username",
+"target_passwd":"password",
+"program":"program_name"
+}
