@@ -2,9 +2,9 @@
 
 build=$1
 
-echo clean and copy from embeddedsolutions.se to sdcard 
+echo clean and copy from buidmachine to sdcard 
 rm ~/rootfs/*
-scp rodz@embeddedsolutions.se:/home/rodz/git/poky/$build/tmp/deploy/images/beaglebone/*.bz2 ~/rootfs/
+scp user@buildmachine:/home/rodz/git/poky/$build/tmp/deploy/images/beaglebone/*.bz2 ~/rootfs/
 ls -al ~/rootfs/
 sudo rm -rf /media/$USER/root/*
 cd /media/$USER/root
