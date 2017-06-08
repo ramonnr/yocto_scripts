@@ -10,11 +10,11 @@ fi
 build=$1
 
 echo clean and copy from buidmachine to sdcard 
-rm ~/rootfs/*
+rm ~/root/*
 scp user@buildmachine:/home/username/git/poky/$build/tmp/deploy/images/beaglebone/*.bz2 ~/rootfs/
 ls -al ~/rootfs/
 sudo rm -rf /media/$USER/rootfs/*
-cd /media/$USER/rootfs
+cd /media/$USER/root
 sudo tar -xf ~/rootfs/*.rootfs*.bz2 .
 ls -al /media/$USER/rootfs
 echo script complete
